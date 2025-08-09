@@ -1,0 +1,571 @@
+  @charset "UTF-8";
+
+/* SCHRIFTEN
+    $font-cursive: Licorice-Regular, cursive;
+    $font-brand: NunitoSans-Light, sans-serif;
+    $font-headline: NunitoSans-Regular, sans-serif;
+    $font-body: NunitoSans-Light, sans-serif;
+    $font-navitem: NunitoSans-ExtraLight, sans-serif;
+*/
+
+/* FARBEN
+    $color-primary: #BD896A;
+    $color-secondary: #D8B3A0;
+    $color-tertiary: #F2DDD0;
+    $color-highlight: #F0AE86;
+    $color-dark: #706760;
+*/
+
+  body {
+    background-color: #BD896A;
+    color: #706760;
+    font-family: NunitoSans-Light, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
+
+  .p-special {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #F2DDD0;
+  }
+  
+  a:hover {
+    color: #F0AE86;
+  }
+
+  h1 {
+    font-family: Licorice-Regular, cursive;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-family: Licorice-Regular, cursive;
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-family: Licorice-Regular, cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    padding: 0;
+  }
+
+  .logo-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-img {
+    margin-top: 40px;
+  }
+
+  .logo-text h1 {
+    color: #F2DDD0;
+    margin: 0;
+  }
+
+  .parallax-section {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  
+  .parallax-content {
+    display: flex;
+    flex-direction: column; /* Elemente vertikal anordnen */
+    justify-content: center; /* Vertikal zentrieren */
+    align-items: center; /* Horizontal zentrieren */
+    height: 100%;
+  }
+  
+  .parallax-quote {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .quote {
+    margin: 2% 8%;
+    text-align: center;
+  }
+  
+  .quote h1 {
+    font-family: Licorice-Regular, cursive;
+    color: #F2DDD0;
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .quote p {
+    font-family: NunitoSans-Light, sans-serif;
+    color: #F2DDD0;
+    margin: 0;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BD896A;
+    height: 50px;
+  }
+  
+  .left-container {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-container ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-left: 40px;
+  }
+
+  @media (max-width: 960px) {
+    .center-container ul {
+      display: none;
+    }
+  }
+  
+  .right-container {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .socials {
+    color: #F2DDD0;
+    font-size: 2rem;
+    margin-right: 40px;
+  }
+  
+  .social-icons {
+    margin: 7px;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 960px) {
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0; /* Initialwert - Wert wird über MobileMenu.js berechnet und gesetzt */
+    right: 0;
+    width: 100%;
+    background-color: #BD896A;
+    z-index: 9999;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .mobile-menu ul {
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  .open {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #706760;
+    color: #F2DDD0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 999;
+  }
+  
+  .scroll-to-top-button.show {
+    display: block;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: center;
+    background-color: #F2DDD0;
+  }
+
+  #section0 {
+    background-color: #D8B3A0;
+  }
+
+  .logo-text h2 {
+    color:#F2DDD0;
+    margin-top: 40px;
+  }
+
+  .section-wrapper {
+    background-color: #D8B3A0;
+    min-height: 30px;
+    font-family: Licorice-Regular, cursive;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-wrapper h1 {
+    margin: 0;
+    padding: 15px;
+    color:#F2DDD0;
+  }
+
+  .section-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    border: solid 1px #BD896A;
+    -webkit-box-shadow: 0px 0px 2px 1px #BD896A;
+    box-shadow: 0px 0px 2px 1px #BD896A;
+    margin: 3%;
+    padding: 2%;
+    opacity: 0;
+  }
+  
+  .section-box i {
+    font-size: 6rem;
+    color: #D8B3A0;
+    margin-bottom: 20px;
+  }
+  
+  #section3 .section-box:hover {
+    border: solid 1px #BD896A;
+    box-shadow: 0px 0px 5px 1px #BD896A;
+    cursor: pointer;
+  }
+
+  #section4 .section-box:hover {
+    border: solid 1px #BD896A;
+    box-shadow: 0px 0px 5px 1px #BD896A;
+    cursor: pointer;
+  }
+
+  #section7 .section-box:hover {
+    border: solid 1px #BD896A;
+    cursor: default;
+  }
+
+  .section-box img {
+    max-width: 50%;
+  }
+
+  .section-text a {
+    color: #706760;
+  }
+
+  .section-text a:hover {
+    color: #F0AE86;
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: center;
+    padding: 2% 20%;
+    width: 100%;
+}
+
+.section-img {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1% 5%;
+    height: 100%;
+}
+
+.section-img img {
+    display: block;
+    width:100%;
+    min-width: 30%;
+    height: auto;
+    border: solid 1px #BD896A;
+    -webkit-box-shadow: 0px 0px 2px 1px #BD896A;
+    box-shadow: 0px 0px 2px 1px #BD896A;
+}
+
+.section-text {
+    flex: 2;
+    justify-content: flex-start;
+    text-align: left;
+    margin-right: 2%;
+}
+
+.section-text h1 {
+  margin: 1% 0;
+}
+
+.section-text ol {
+  counter-reset: step-counter; /* Initialisiert den Zähler */
+  list-style: none; /* Entfernt die Standard-Nummerierung */
+  padding: 0; /* Entfernt den Standard-Einzug */
+  font-size: 1.1rem;
+}
+
+.section-text ol li {
+  counter-increment: step-counter; /* Erhöht den Zähler */
+  margin: 1rem 0; /* Abstand zwischen den Schritten */
+  padding-left: 2.5rem; /* Platz für die Nummer */
+  position: relative;
+}
+
+.section-text ol li::before {
+  content: counter(step-counter) "."; /* Fügt die Nummer hinzu */
+  position: absolute;
+  left: 0; /* Position der Nummer */
+  top: 0;
+  font-family: Licorice-Regular, cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #F2DDD0; /* Farbe der Nummer */
+  background: #BD896A; /* Hintergrundfarbe */
+  width: 2rem; /* Größe des Kreises */
+  height: 2rem;
+  border-radius: 0%; /* Runde Form */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Zentriert die Nummer */
+}
+
+.section-text ul li {
+  font-size: 1.1rem;
+  margin-left: 30px;
+}
+
+.section-fa {
+  height: 2rem;
+}
+
+#section8 {
+  background-color: #D8B3A0;
+  color: #F2DDD0;
+  min-height: 300px; /* oder mehr, je nach Bedarf */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section8 p {
+  font-family: Licorice-Regular, cursive;
+  font-size: 3rem;
+}
+
+.ibh-logo-container {
+  margin-top: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.ibh-logo-container img {
+  max-width: 300px;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #D8B3A0;
+}
+
+th {
+  background-color: #D8B3A0;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #F2DDD0;
+}
+
+table h3 {
+  margin: 0;
+}
+
+.fake-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  color: #706760;
+  font-size: 1.1rem;
+}
+
+.fake-link:hover {
+  color: #F0AE86;
+}
+
+body.overlay-open {
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay-content {
+  background: #F2DDD0;
+  color: #706760;
+  padding: 2rem 5rem;
+  max-width: 1000px;
+  width: 90%;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  max-height: 90vh;       /* Begrenzung auf 90% der Viewport-Höhe */
+  overflow-y: auto;       /* Scrollbar, wenn nötig */
+}
+
+.overlay-content h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.overlay-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-content hr {
+  border: none;
+  border-top: 1px solid #D8B3A0;
+  margin: 1.5rem 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(30%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+#footer-section {
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #BD896A;
+  color: #F2DDD0;
+  height: 50px;
+}
+
+.center-container {
+  display: flex;
+  gap: 2rem;
+}
+
+#footer-section a {
+  padding: 0.5rem 1rem;
+}
+
+#footer-section .fake-link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  color: #F2DDD0;
+  font-size: 1.1rem;
+}
+
+#footer-section .fake-link:hover {
+  color: #F0AE86;
+}
+
+.rechtliches {
+  background-color: #F2DDD0;
+  padding: 2%;
+}

@@ -1,0 +1,57 @@
+/* licorice-regular - latin */
+@font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'Licorice-Regular';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../webfonts/licorice-v3-latin-regular.eot'); /* IE9 Compat Modes */
+     src: url('../webfonts/licorice-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../webfonts/licorice-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../webfonts/licorice-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../webfonts/licorice-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../webfonts/licorice-v3-latin-regular.svg#Licorice') format('svg'); /* Legacy iOS */
+   }
+
+   /* nunito-sans-200 - latin */
+@font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'NunitoSans-ExtraLight';
+     font-style: normal;
+     font-weight: 200;
+     src: url('../webfonts/nunito-sans-v15-latin-200.eot'); /* IE9 Compat Modes */
+     src: url('../webfonts/nunito-sans-v15-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../webfonts/nunito-sans-v15-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-200.woff') format('woff'), /* Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../webfonts/nunito-sans-v15-latin-200.svg#NunitoSans') format('svg'); /* Legacy iOS */
+   }
+   
+   /* nunito-sans-300 - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'NunitoSans-Light';
+     font-style: normal;
+     font-weight: 300;
+     src: url('../webfonts/nunito-sans-v15-latin-300.eot'); /* IE9 Compat Modes */
+     src: url('../webfonts/nunito-sans-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../webfonts/nunito-sans-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../webfonts/nunito-sans-v15-latin-300.svg#NunitoSans') format('svg'); /* Legacy iOS */
+   }
+   
+   /* nunito-sans-regular - latin */
+   @font-face {
+     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-family: 'NunitoSans-Regular';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../webfonts/nunito-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+     src: url('../webfonts/nunito-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../webfonts/nunito-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+          url('../webfonts/nunito-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+          url('../webfonts/nunito-sans-v15-latin-regular.svg#NunitoSans') format('svg'); /* Legacy iOS */
+   }
+   
+   
